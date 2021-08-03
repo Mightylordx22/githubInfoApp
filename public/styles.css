@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa|Manjari|Montserrat|Roboto|Merienda+One&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  color: #f0f0f0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #24252a;
+}
+
+#root {
+  position: fixed;
+  left: 47.5%;
+  top: 35%;
+  transform: translate(-47.5%, -30%);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.spacer {
+  width: 800px;
+  background: #3a3c44;
+  border-radius: 20px;
+  filter: drop-shadow(0 0 1rem black);
+  padding: 30px;
+}
+
+.github-image {
+  margin: 0 20px 0 0;
+  border: 8px solid #24252a;
+  border-radius: 100%;
+}
+
+.github-content {
+  width: 600px;
+}
+
+.form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form p {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 0.9em;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.contact-field {
+  padding: 7px 0 7px 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  background: transparent;
+}
+
+.contact-form {
+  min-height: 20vh;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.contact-field:focus {
+  outline: none;
+}
+
+.github-stats {
+  margin-top: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.github-repos {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.repo {
+  margin: 2px 8px 2px 0 !important;
+  background: #293155;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.repo-link {
+  text-decoration: none;
+}
+
+.repo-link {
+  transition: 0.25s ease;
+}
+
+.repo-link:hover {
+  transition: 0.25s ease;
+  color: rgb(235, 252, 0);
+}
+
+.bold {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}

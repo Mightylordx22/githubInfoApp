@@ -1,0 +1,1 @@
+export { GithubContent } from "./GithubContent"
