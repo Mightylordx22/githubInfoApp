@@ -116,3 +116,18 @@ body {
   font-weight: 600;
   letter-spacing: 0.05em;
 }
+
+.twitter-name {
+  position: absolute;
+  margin-left: 5px;
+  transform: translate(0, 1px);
+}
+
+.twitter-link {
+  transition: 0.15s ease;
+}
+
+.twitter-link:hover {
+  transition: 0.15s ease;
+  color: #1DA1F2;
+}

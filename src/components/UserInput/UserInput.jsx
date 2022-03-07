@@ -19,20 +19,20 @@ export const UserInput = ({ setData }) => {
       })}
       onSubmit={(values) => {
         fetchGithubData(values.username).then(async (data) => {
-          setData(JSON.stringify(data));
+          data = JSON.stringify(data);
+          setData(data);
+          localStorage.setItem('githubInfo', data)
         });
       }}
     >
-      {({ dirty, isValid, isSubmitting, submitForm, values }) => (
-        <Form className={"form"}>
-          <Field
-            id="username"
-            name="username"
-            className={"contact-field"}
-            placeholder="Github Username"
-          />
-        </Form>
-      )}
+      <Form className={"form"}>
+        <Field
+          id="username"
+          name="username"
+          className={"contact-field"}
+          placeholder="Github Username"
+        />
+      </Form>
     </Formik>
   );
 };

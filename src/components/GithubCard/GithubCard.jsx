@@ -4,7 +4,6 @@ import { GithubImage } from "./GithubImage";
 
 export const GithubCard = ({ data }) => {
   const user = JSON.parse(data);
-  console.log(user);
   return (
     <>
       {user.login ? (
